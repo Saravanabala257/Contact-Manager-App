@@ -12,10 +12,11 @@ If any Time problem will occur Kindly check your boot setting.
 java codes are used in this app.
 
 # for sign up  like this
-![image](https://user-images.githubusercontent.com/101492188/158049000-faaf1126-4c08-4895-8a95-124dec1e8551.png)
+![image](https://user-images.githubusercontent.com/101492188/158049452-c2562804-ae37-43c0-a300-a9c3679717f9.png)
+
 
 # for sign in like this
-![image](https://user-images.githubusercontent.com/101492188/158049079-af3f69e7-6ab6-4e52-8e53-88829a4e0216.png)
+![image](https://user-images.githubusercontent.com/101492188/158049503-0fc96ce9-af1f-4864-89c9-93a1eee16272.png)
 
 # for contact collection 
 ![image](https://user-images.githubusercontent.com/101492188/158049134-18af9216-b761-43ea-b565-c1ee23d61a70.png)
