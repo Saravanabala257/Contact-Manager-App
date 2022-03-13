@@ -78,6 +78,7 @@ xml file:
 
 
 .java file(Main File):
+
 package com.example.contactlistpage;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -130,6 +131,7 @@ public class MainActivity extends AppCompatActivity {
 }
 
 support file(Class file):
+
 package com.example.contactlistpage;
 
 public class Member {
