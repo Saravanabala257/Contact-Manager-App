@@ -33,7 +33,9 @@ After Installation: You should Install the Android Emulator.
 # For database purposes:
 Go to tools in Android Studio.
 click firebase and create realtime database.
-please refer this page: https://youtu.be/iy6WexahCdY
+please refer this page: 
+https://youtu.be/lnidtzL71ZA
+https://youtu.be/iy6WexahCdY
 
 
 
