@@ -11,6 +11,8 @@ If any Time problem will occur Kindly check your boot setting.
 # code type
 java codes are used in this app.
 
+
+
 # for sign up  like this
 ![image](https://user-images.githubusercontent.com/101492188/158049452-c2562804-ae37-43c0-a300-a9c3679717f9.png)
 
@@ -27,6 +29,11 @@ Android Studio is used for building this app.
 # for support 
 App link: https://developer.android.com/studio?gclid=CjwKCAiAprGRBhBgEiwANJEY7EPdunDzhbcri4tsTJstpV6dYaOrwQ2MNP1k0x6h2dkwl8dT7wB6cBoC2tgQAvD_BwE&gclsrc=aw.ds
 After Installation: You should Install the Android Emulator.
+
+# For database purposes:
+Go to tools in Android Studio.
+click firebase and create realtime database.
+please refer this page: https://youtu.be/iy6WexahCdY
 
 
 
