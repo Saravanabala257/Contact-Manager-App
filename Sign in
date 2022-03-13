@@ -1,0 +1,174 @@
+xml file:
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Signintitle"
+        android:text="@string/sign_in"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Donthaveanaccount"
+        android:layout_below="@id/Signintitle"
+        android:text="@string/don_t_have_an_account_sign_up"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Email"
+        android:layout_below="@id/Donthaveanaccount"
+        android:hint="@string/email"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:drawableStart="@drawable/ic_baseline_mail_24"
+        android:drawablePadding="20sp" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Password"
+        android:layout_below="@id/Email"
+        android:hint="@string/password"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:drawableStart="@drawable/ic_baseline_security_24"
+        android:drawablePadding="20sp"
+        android:inputType="textPassword"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Forgetpassword"
+        android:layout_below="@id/Password"
+        android:text="@string/forgot_your_password"
+        android:textColor="@color/purple_200"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Signinbtn"
+        android:layout_below="@id/Forgetpassword"
+        android:text="Sign In"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp" />
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+
+.java file:
+package com.example.mysignin;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.material.button.MaterialButton;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+public class MainActivity extends AppCompatActivity {
+EditText Email,Password;
+MaterialButton Signinbtn;
+DatabaseReference reff;
+Member member;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Email=(EditText)findViewById(R.id.Email);
+        Password=(EditText)findViewById(R.id.Password);
+        Signinbtn=(MaterialButton)findViewById(R.id.Signinbtn);
+        reff=FirebaseDatabase.getInstance().getReference().child("Member");
+        Signinbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                member.setEmail(Email.getText().toString().trim());
+                member.setPassword(Password.getText().toString().trim());
+                reff.push().setValue(member);
+                Toast.makeText(MainActivity.this, "run successfully", Toast.LENGTH_LONG).show();
+            }
+        });
+
+
+                    }
+
+            }
+
+
+
+
+
+
+
+
+support file:
+package com.example.mysignin;
+
+public class Member {
+
+private String Email;
+private String Password;
+
+    public Member() {
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
+    }
+
+    public String getPassword() {
+        return Password;
+    }
+
+    public void setPassword(String password) {
+        Password = password;
+    }
+}
