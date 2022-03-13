@@ -154,3 +154,43 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
+
+support code:
+
+package com.example.mycontactapp;
+
+public class Register {
+
+    private String Email;
+    private Long Password;
+    private Long Secret;
+
+    public Register() {
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
+    }
+
+    public Long getPassword() {
+        return Password;
+    }
+
+    public void setPassword(Long password) {
+        Password = password;
+    }
+
+    public Long getSecret() {
+        return Secret;
+    }
+
+    public void setSecret(Long secret) {
+        Secret = secret;
+    }
+}
+
+
