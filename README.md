@@ -8,26 +8,26 @@ then the contact page we are going to get the data's like name , phone no , emai
 Probably no Problems will Occur.
 If any Time problem will occur Kindly check your boot setting.
 
-# code type
+# Code Type
 java codes are used in this app.
 
 
 
-# for sign up  like this
+# For sign up  like this
 ![image](https://user-images.githubusercontent.com/101492188/158049452-c2562804-ae37-43c0-a300-a9c3679717f9.png)
 
 
-# for sign in like this
+# For sign in like this
 ![image](https://user-images.githubusercontent.com/101492188/158049503-0fc96ce9-af1f-4864-89c9-93a1eee16272.png)
 
-# for contact collection 
+# For contact collection 
 ![image](https://user-images.githubusercontent.com/101492188/158055053-9cbdc377-4f2c-4fbe-89a0-993eab6617f4.png)
 
 
-# frame work used
+# Frame work used
 Android Studio is used for building this app.
 
-# for support 
+# For support 
 App link: https://developer.android.com/studio?gclid=CjwKCAiAprGRBhBgEiwANJEY7EPdunDzhbcri4tsTJstpV6dYaOrwQ2MNP1k0x6h2dkwl8dT7wB6cBoC2tgQAvD_BwE&gclsrc=aw.ds
 After Installation: You should Install the Android Emulator.
 
